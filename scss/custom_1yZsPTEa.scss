@@ -1,0 +1,177 @@
+/* 
+Compile this file to css/custom_1yZsPTEa.css using any SCSS preprocessor. 
+More information here: https://slides.gitbook.io/manual/scss
+*/
+
+@import "mixins.scss"; 
+@import "variables.scss";
+@import "variables-custom.scss";
+
+/* First Screen (#1) */
+.slide[data-cid="slide-158-4edb5d8e"]{
+  h1{
+    letter-spacing: -0.945px;
+  }
+}
+
+/* Second Screen (#2) */
+/* To restrict styles to the current slide, panel, or example use .slide[data-cid="slide-159-b421431a"] */
+.slide[data-cid="slide-159-b421431a"]{
+  .box-159{
+    border-left: 5px solid $blue; 
+  }
+  .box-159-orange{
+    border-left: 5px solid $orange; 
+  }
+  .box-159-green{
+    border-left: 5px solid $green; 
+  }
+	
+  .downloadBlock{
+   	background-color: white;
+   	padding: 20px 30px;
+    width: 620px;
+    position: absolute;
+    bottom: -45px;
+    left: 60px;
+    box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.07);
+  }
+  @media(min-width: 1240px){
+   	h1{
+    	font-size: 90px;
+  	}
+    h2{
+    	font-size: 39px;
+  	}
+  }
+  @media(max-width: 1208px){
+    .downloadBlock{
+    	position: relative;
+      left: 0;
+      bottom: -15px;
+    }
+  }
+    @media(max-width: 1120px){
+  	.downloadBlock{
+    	width: auto;
+    }
+    .downloadBlock li{
+    	width: 100%;
+      text-align: center !important;
+    }
+    .downloadButton{
+    	margin-top: 10px;
+    }
+  }
+  @media(max-width: 768px){
+   img{
+     min-width: 100%;
+    }
+  }
+}
+
+/* Third Screen (#3) */
+/* To restrict styles to the current slide, panel, or example use .slide[data-cid="slide-160-1e0defc5"] */
+.slide[data-cid="slide-160-1e0defc5"]{
+  .btn-160{
+    min-width:142px;
+  }
+    @media(max-width: 1097px){
+  	 .customCulumn{
+     width: 40% !important;  
+    }
+    .customColumnButton{
+     width: 20% !important; 
+    }
+  }
+  @media (max-width: 1097px){
+.flex:not(.later)>[class*=col-]:not([class*=col-phablet-]):not([class*=col-phone-]) {
+    width: 100%;
+}
+  }
+	@media(max-width: 878px){
+  	.customCulumn{
+     	width: 100% !important;
+      text-align: center !important;
+      margin-top: 20px;
+    }
+    .customBlock{
+    	display: block !important;
+      margin-left: 0 !important;
+      margin-top: 10px;
+    }
+  }
+}
+.slide.customLine{
+  	background: linear-gradient($customBeige, white) !important;
+  }
+
+/* Slide 161 (#4) */
+/* To restrict styles to the current slide, panel, or example use .slide[data-cid="slide-161-60786b08"] */
+.slide[data-cid="slide-161-60786b08"]{
+  .box-161{
+    width: 120px;
+    height: 120px;
+    line-height:120px;
+  }
+}
+
+/* Slide 125 (#5) */
+/* To restrict styles to the current slide, panel, or example use .slide[data-cid="slide-125-18c5f226"] */
+.slide[data-cid="slide-125-18c5f226"]{
+  .controller-125-dots{
+    > li{
+      height: 10px;
+      width: 10px;
+      background: rgba($default-white-color, 0.6);
+      margin-right:5px;
+      transition: .15s;
+      &:after{
+        display: none;
+      }
+      &.selected{
+        background: rgba($default-white-color, 1);
+      }
+      &:hover{
+        transform:scale(1.25);
+      }
+    }
+  }
+  &.whiteSlide{
+    .controller-125-dots{
+      > li{
+        background: $gray;
+        &.selected{
+          background: $default-text-color;
+        }
+      }
+    } 
+  }
+  .slider-125-next-btn, .socials-125{
+    a:hover{
+      opacity:1 !important;
+    }
+  }
+  .controller-125-img{
+    > li{
+      &.selected{
+        display: none;
+      }
+      img{
+        transition: .15s;
+        &:hover{
+          opacity:1 !important;
+        }
+      }
+    }
+  }
+}
+
+/* Panel Bottom 12 */
+[data-cid="panel-bottom-12-eaaffacc"] .panel, .panel[data-cid="panel-bottom-12-eaaffacc"]{
+}
+.panel.bottom{
+  border-top: 1px solid $customGray-3;
+  padding-top: 27px;
+  padding-bottom: 28px;
+  }
