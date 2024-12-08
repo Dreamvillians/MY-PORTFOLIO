@@ -222,6 +222,60 @@ a, .button{
 		</div>
 	</nav>
 </div>
+<!-- WhatsApp Chat Widget -->
+<style>
+  /* Style for the WhatsApp button */
+  .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      background-color: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      z-index: 1000; /* Keeps the button on top of other elements */
+      transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+
+  .whatsapp-button:hover {
+      background-color: #1DAE4C; /* Darker green on hover */
+  }
+
+  .whatsapp-button img {
+      width: 30px;
+      height: 30px;
+  }
+</style>
+
+<script>
+  window.__wa = window.__wa || {};
+  window.__wa.phone = "+27685782474"; // Your WhatsApp number in international format
+  window.__wa.message = "Hello! I would like to know more about your work."; // Predefined message when the user clicks the widget
+
+  (function(n, t) {
+      var waButton = document.createElement("a");
+      waButton.className = "whatsapp-button"; // Assign class for styling
+      waButton.href = `https://wa.me/${window.__wa.phone}?text=${encodeURIComponent(window.__wa.message)}`;
+      waButton.target = "_blank"; // Opens WhatsApp in a new tab
+      waButton.innerHTML = `<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">`;
+
+      // Append the button to the body
+      document.body.appendChild(waButton);
+  })(window, document);
+</script>
+
+<noscript>
+  <a href="https://wa.me/+27685782474?text=Hello! I would like to know more about your services." target="_blank">Chat with us on WhatsApp</a>
+</noscript>
+<!-- End of WhatsApp Chat Widget -->
+
+
+
 <!-- First Screen (#1) -->
 <section data-cid="slide-158-4edb5d8e" class="slide autoHeight whiteSlide" data-name="Home" data-title="HEADER">
   <div class="content"> 
@@ -531,6 +585,52 @@ I'm Vespas K. Manhaka&nbsp;a &nbsp;<span class="text-blue">Web developer</span> 
     </div>
   </div>
    <div class="background" style="background-image:url(assets/img/background/img-125.jpg)"></div>
+</section>
+
+<section data-cid="slide-141-5ec45a41" class="slide fade-6">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+        <div class="fix-12-12">
+          <h1 class="margin-bottom-5 smallest align-left phablet-align-center ae-1">GRAPHIC WORKS</h1>
+          <ul class="flex fixedSpaces">
+            <li class="col-4-12 col-tablet-1-3 col-phablet-1-1">
+              <div class="margin-bottom-5 ae-2">
+                <img src="assets/uploads/2.png?p=3rj2o7fK" alt="Picture" class="margin-bottom-2 block wide rounded" data-action="zoom" />
+                <h4 class="crop smaller">TRADING POSTER</h4>
+                <p class="crop opacity-8">COLLEGE</p>
+              </div>
+              <div class="margin-bottom-phablet-5 ae-3">
+                <img src="assets/uploads/higher-recod.png?p=3rj2o7fK" alt="Picture" class="margin-bottom-2 block wide rounded" data-action="zoom" />
+                <h4 class="crop smaller">RECORD LABEL</h4>
+                <p class="crop opacity-8">Higher Records</p>
+              </div>
+            </li>
+            <li class="col-4-12 col-tablet-1-3 col-phablet-1-1">
+              <div class="margin-bottom-phablet-5 box-141-center ae-4">
+                <h4 class="crop smaller">BOOK COVER</h4>
+                <p class="crop opacity-8">Anonimous</p>
+                <img src="assets/uploads/cover.png?p=3rj2o7fK" alt="Picture" class="margin-top-2 margin-top-phablet-0 margin-bottom-phablet-2 block wide rounded" data-action="zoom" />
+              </div>
+            </li>
+            <li class="col-4-12 col-tablet-1-3 col-phablet-1-1 box-141-right">
+              <div class="margin-bottom-5 ae-5">
+                <img src="assets/uploads/2444090.png?p=3rj2o7fK" alt="Picture" class="margin-bottom-2 block wide rounded" data-action="zoom" />
+                <h4 class="crop smaller">ALBUM TRACKLIST COVER</h4>
+                <p class="crop opacity-8">KOKAINE</p>
+              </div>
+              <div class="ae-6">
+                <img src="assets/uploads/blue-illustrative-photography-logo.png?p=3rj2o7fK" alt="Picture" class="margin-bottom-2 block wide rounded" data-action="zoom" />
+                <h4 class="crop smaller">LOGO</h4>
+                <p class="crop opacity-8">KOK STUDIO</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background-image:url(assets/img/background/img-125.jpg)"></div>
 </section>
 
 
